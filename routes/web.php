@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['prefix' => 'adimin'],function(){
+Route::group(['prefix' => 'admin'],function(){
     Route::get('news/create','Admin\NewsController@add');
     
     //問題４
