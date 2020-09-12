@@ -29,6 +29,7 @@ Route::group(['prefix' => 'admin','middleware' =>'auth'],function(){
     Route::get('news/edit','Admin\NewsController@edit');
     Route::post('news/edit','Admin\NewsController@update');
     Route::get('news/delete','Admin\NewsController@delete');
+    
 });
 /*
 問題３
@@ -40,3 +41,5 @@ AAAControllerのbbbというAction に渡すRoutingの設定」を書いてみ�
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/','NewsController@index');
