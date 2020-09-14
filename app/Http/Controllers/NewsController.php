@@ -23,6 +23,6 @@ class NewsController extends Controller
     //news/index.blade.phpを渡している
     //また　Viewテンプレートにheadlineheadline、posts、という変数を渡している
     
-    return view('news,index',['headline' => $headline, 'posts' => $posts]);
+    return view('news.index',['headline' => $headline, 'posts' => $posts]);
     }
 }
